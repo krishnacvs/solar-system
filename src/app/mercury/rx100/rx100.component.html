@@ -1,0 +1,28 @@
+<p>rx100 works!</p>
+<mat-tab-group>
+    <mat-tab label="First"> Content 1 
+      <div>
+        <button mat-raised-button color="primary" (click)="onActivate()">Click to Activate</button>
+      </div>
+    </mat-tab>
+    <mat-tab label="Second"> Content 2 
+      <section>
+        <div class="content" *ngIf="activated">
+            <p>It is activated</p>
+        </div>
+    </section>
+    </mat-tab>
+    <mat-tab label="Third"> 
+      <form [formGroup]="activationForm" (ngSubmit)="onSubmit(activationForm.value)">
+        <ng-template appPlaceholder></ng-template>
+        <mat-form-field appearance="fill">
+          <mat-label>Input</mat-label>
+          <input 
+          formControlName="activationCode"
+          matInput>
+        </mat-form-field>
+        <button mat-raised-button color="primary">Click to Activate</button>
+      </form>
+    </mat-tab>
+  </mat-tab-group>
+ 

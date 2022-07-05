@@ -1,0 +1,38 @@
+<p>ask-question works!</p>
+<button>Sample</button>
+<section>
+    <div>
+        <app-alert 
+        message={{message}}
+        *ngIf="error"
+        (close)="onHandleError()"></app-alert>
+        <form [formGroup]="faqForm" (ngSubmit)="onSubmit(faqForm.value)">
+            <div class="form-gruoup">
+                <label>Category</label>
+                <select 
+                name="category"
+                formControlName ="category" >
+                    <option value="" disabled>Choose a category</option>
+                    <option *ngFor="let l of categories">
+                        {{ l.name }}
+                    </option>
+                  </select>
+            </div>
+            <div class="form-group">
+                <label>Question</label>
+                <input 
+                type="text" 
+                formControlName ="question" 
+                class="form-control">
+                <span class="help" *ngIf="!faqForm.valid">please enter the question</span>
+            </div>
+            <div>
+                <button>Add Question</button> &nbsp; <button (click)="$event.stopPropagation()">Clear</button>
+            </div>
+        </form>
+    </div>
+    <app-faq>
+        <app-date-viewer></app-date-viewer><br>
+        {{faqForm.get('question')?.value}}
+    </app-faq>
+</section>

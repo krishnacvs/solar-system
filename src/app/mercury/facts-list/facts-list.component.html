@@ -1,0 +1,16 @@
+<section><div>&nbsp;</div></section>
+<section>
+    <div>
+        <ul class="list" #row>
+            <li><b>Fact</b></li>
+            <li><b>Description</b></li>
+        </ul>
+        <div *ngFor="let l of factList">
+            <ul class="list">
+                <li><b>{{ l.factPropertyName }}</b></li>
+                <li>{{ l.factPropertyValue }}</li>
+            </ul>
+        </div>
+    </div>
+    <div><button (click)="hideRow()">Hide Header</button></div>
+</section>

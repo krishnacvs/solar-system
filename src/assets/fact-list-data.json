@@ -1,0 +1,38 @@
+[
+    {
+      "factPropertyName": "Size",
+      "factPropertyValue": " 0.38 Earths"
+    },
+    {
+      "factPropertyName": "Diameter",
+      "factPropertyValue": "4880 kilometers"
+    },
+    {
+      "factPropertyName": "Mass",
+      "factPropertyValue": "3.3011 × 1023 kg (0.055 Earths)"
+    },
+    {
+      "factPropertyName": "Aphelion",
+      "factPropertyValue": "0.466 Astronomical Units (1 AU = distance from Earth to the Sun)"
+    },
+    {
+      "factPropertyName": "Perihelion",
+      "factPropertyValue": "0.3 Astronomical Units"
+    },
+    {
+      "factPropertyName": "Gravity",
+      "factPropertyValue": "0.38 times Earth’s gravity"
+    },
+    {
+      "factPropertyName": "Orbital Period",
+      "factPropertyValue": "88 Earth days"
+    },
+    {
+      "factPropertyName": "Rotational Period",
+      "factPropertyValue": "58.7 Earth days"
+    },
+    {
+      "factPropertyName": "Surface Temperature",
+      "factPropertyValue": "100 K to 700 K (−173 °C to 427 °C)"
+    }
+   ]

@@ -1,0 +1,7 @@
+<p>climate works {{activated}}!</p>
+<section>
+    <mat-card *ngIf="activated">Climate Monitoring is in progress</mat-card>
+    <mat-card *ngIf="!activated">Please activate Climate Monitoring</mat-card>
+</section>
+
+<app-fact-details>Here is the Child Component</app-fact-details>

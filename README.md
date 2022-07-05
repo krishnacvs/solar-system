@@ -10,6 +10,27 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
+Run `ng generate module module-name` to generate a new module
+
+Run `ng generate service service-name` to generate a new service
+
+app-shell
+application
+class
+component
+directive
+enum
+guard
+interceptor
+interface
+library
+module
+pipe
+resolver
+service
+service-worker
+web-worker
+
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
@@ -25,3 +46,30 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+## Subjects
+  - Subject - No initial value or replay available
+  - AsyncSubject - Emits latest values to subscribers on completion of the - async task - Http Request
+  - BehaviouralSubject - requires an initial value and emits current values to new subscribers
+  - ReplaySubject - replays a specified number of last values to new subscribers
+
+## Material UI
+- Forms
+- Menu 
+- Tabs 
+- progress bar 
+- Tree
+
+## Unit test 
+- BeforeEach 
+    - Declarations
+- it('Creat the app')
+    - create fixture from test bed 
+    - invoke app 
+    - SpyOn('Service') and async tasks or tick()
+    - detectChanges 
+    - assert 
+
+Promise 
+- Execute a task asyncnously and notify when ready 

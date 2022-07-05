@@ -1,0 +1,18 @@
+<h1>faq goes here!</h1>
+<section>
+    <input type="text" name="search" id="search" #search> <button (click)="onSearch()" class="btn">Search</button>
+    <div>
+        <ul *ngFor="let l of faq">
+            <li>
+                {{l.question}}
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <ng-content></ng-content>
+            </li>
+        </ul>
+        
+    </div>
+    
+</section>

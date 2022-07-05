@@ -1,0 +1,21 @@
+<p>projects works!</p>
+<section>
+    <div class="task" *ngIf="task else loading">
+        {{task.taskName}}
+    </div>
+</section>
+<ng-template #loading>
+    Loading
+    <mat-spinner></mat-spinner>
+</ng-template>
+
+<ng-template [ngIf] = "task"  [ngIfElse]="loading"></ng-template>
+
+<ul>
+    <ng-container *ngIf="taskList">
+        <ng-container *ngFor="let l of taskList">
+            <li>{{l.taskName}}-{{l.taskDescription}}</li>
+        </ng-container>
+    </ng-container>
+</ul>
+<app-fact-details>Here is the Child Component</app-fact-details>

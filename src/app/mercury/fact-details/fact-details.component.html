@@ -1,0 +1,14 @@
+
+<section>
+    <div class="content">
+        <h1>Fact-details!</h1>
+        <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item (click)="activateMonitoring()">Activate Monitoring</button>
+          <button mat-menu-item (click)="deActivateMonitoring()">De-Activate Monitoring</button>
+        </mat-menu>
+        <a  routerLink="/mercury/climate/details">Climate</a>
+        <a  routerLink="/mercury/project/details">Project</a>
+    </div>
+</section>
+<ng-content></ng-content>

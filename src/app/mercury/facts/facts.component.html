@@ -1,0 +1,39 @@
+<div class="content">
+    <h2>Facts</h2>
+    <div class="row">
+        <div class="col-xs-12 col-sm-10">
+            <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+                <div>
+                    <label>Fact Property</label>
+                    <input 
+                    name="factPropertyName" 
+                    type="text" 
+                    class="form-control" 
+                    [(ngModel)]="factPropertyName"
+                    required />
+                </div>
+                <div>
+                    <label>Fact Detail</label>
+                    <textarea 
+                    name="factPropertyValue" 
+                    class="form-control" 
+                    [(ngModel)]="factPropertyValue"></textarea>
+                </div>
+                <div>
+                    <button class="btn btn-primary" [disabled]="!f.valid">Add Fact</button>
+                </div>
+            </form>
+            <div>
+                <p>
+                    <label>Fact Name</label>:
+                    <label>{{factPropertyName}}</label>
+                </p>
+                <p>
+                    <label>Fact Description</label>:
+                    <label>{{factPropertyValue}}</label>
+                </p>
+            </div>
+        </div>
+    </div>
+    
+</div>
