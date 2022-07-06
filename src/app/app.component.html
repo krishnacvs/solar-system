@@ -1,6 +1,18 @@
-<div>
-  <app-header></app-header>
-  <div class="container">
-      <router-outlet></router-outlet>
-  </div>
-</div>
+<head></head>
+
+<body>
+    <div class="container">
+        <app-header></app-header>
+    </div>
+    <main role="main" class="container">
+        <div class="row">
+            <div class="col-md-8 blog-main">
+                <router-outlet></router-outlet>
+            </div>
+            <aside class="col-md-4 blog-sidebar">
+                <app-side-bar></app-side-bar>
+            </aside>
+        </div>
+    </main>
+    <app-footer></app-footer>
+</body>

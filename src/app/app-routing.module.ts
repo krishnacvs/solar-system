@@ -7,7 +7,12 @@ import { MercuryModule } from './mercury/mercury.module';
 const routes: Routes = [ {
   path: 'home',
   component: HomeComponent
-}];
+},
+{
+  path: '',
+  component: HomeComponent
+},
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
